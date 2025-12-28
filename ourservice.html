@@ -1,239 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Services — GAK Travelling</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Our Services | GAK Travelling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SERVICES PAGE CSS -->
+  <link rel="stylesheet" href="services.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<!-- HEADER - keeps the same top ribbon; allow returning to sections on the home page -->
 <header class="header">
   <div class="header-inner">
     <div class="logo-area">
-      <a href="index.html"><img src="https://i.ibb.co/4ZDvPSQt/image.png" alt="GAK Travelling"></a>
-      <span class="brand">GAK Travelling</span>
+      <img src="https://i.ibb.co/4ZDvPSQt/image.png">
+      <span>GAK Travelling</span>
     </div>
-
     <nav class="nav">
-      <a href="index.html#about">About Us</a>
-      <a href="ourservice.html#services">Services</a>
-      <a href="index.html#locations">Locations</a>
-      <a href="index.html#contact">Contact Us</a>
+      <a href="index.html">Home</a>
+      <a href="#vehicles">Vehicles</a>
+      <a href="#driver">Driver</a>
+      <a href="#hotels">Hotels</a>
     </nav>
   </div>
 </header>
 
-<main class="section">
-  <div class="container">
-    <h1>Our Services</h1>
-    <p class="lead">All services are on this page — Vehicles, Driver & Guiding, and Hotels. Use the tabs or the quick links below.</p>
+<section id="vehicles" class="section">
+  <h2>Available Vehicles</h2>
+  <p>Select your preferred vehicle and contact us to book.</p>
+</section>
 
-    <!-- TAB NAV -->
-    <div class="service-tabs" id="services">
-      <nav class="tab-nav" role="tablist">
-        <button data-target="#vehicles" class="tab active">Vehicles</button>
-        <button data-target="#driver" class="tab">Driver & Guiding</button>
-        <button data-target="#hotels" class="tab">Hotels & Booking</button>
-      </nav>
+<section id="driver" class="section gray">
+  <h2>Driver & Guiding Service</h2>
+  <p>Professional, friendly and knowledgeable local driver.</p>
+</section>
 
-      <!-- CONTENT PANELS -->
-      <div class="tab-content">
+<section id="hotels" class="section">
+  <h2>Hotels & Booking</h2>
+  <p>We arrange hotels and bookings anywhere in Sri Lanka.</p>
+</section>
 
-        <!-- VEHICLES PANEL -->
-        <section id="vehicles" class="panel active">
-          <h2>Available Vehicles</h2>
-          <p>Choose your preferred vehicle. Click Contact to arrange booking.</p>
-
-          <div class="vehicles-list">
-            <article class="vehicle-card">
-              <img src="https://i.ibb.co/N6wdpbGs/image.png" alt="Honda Freed">
-              <div class="vehicle-info">
-                <h3>Honda Freed</h3>
-                <p>Compact people-mover — ideal for families.</p>
-                <a class="btn primary" href="#contact">Contact Us</a>
-              </div>
-            </article>
-
-            <article class="vehicle-card">
-              <img src="https://i.ibb.co/C5Xf3GCB/image.png" alt="Toyota Axio">
-              <div class="vehicle-info">
-                <h3>Toyota Axio</h3>
-                <p>Comfortable sedan, great for city travel.</p>
-                <a class="btn primary" href="#contact">Contact Us</a>
-              </div>
-            </article>
-
-            <article class="vehicle-card">
-              <img src="https://i.ibb.co/zTXm2bLG/image.png" alt="Toyota Prius">
-              <div class="vehicle-info">
-                <h3>Toyota Prius</h3>
-                <p>Fuel-efficient hybrid for longer trips.</p>
-                <a class="btn primary" href="#contact">Contact Us</a>
-              </div>
-            </article>
-
-            <article class="vehicle-card">
-              <img src="https://i.ibb.co/pr6cfvg1/image.png" alt="Honda Vezel">
-              <div class="vehicle-info">
-                <h3>Honda Vezel</h3>
-                <p>Compact SUV — more luggage space and comfort.</p>
-                <a class="btn primary" href="#contact">Contact Us</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- DRIVER PANEL -->
-        <section id="driver" class="panel">
-          <h2>Driver & Guiding</h2>
-          <div class="driver-panel">
-            <div class="driver-left">
-              <p>Our drivers are professional, English-speaking and experienced in delivering memorable local tours — cultural sites, beaches, tea country and wildlife.</p>
-              <ul>
-                <li>✔ English speaking</li>
-                <li>✔ Local knowledge</li>
-                <li>✔ Safe, experienced driving</li>
-                <li>✔ Flexible itineraries</li>
-              </ul>
-              <a class="btn primary" href="#contact">Contact Us</a>
-            </div>
-            <aside class="driver-right">
-              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Driver">
-              <h4>Mr. Sampath</h4>
-              <p class="muted">Driver & Guide</p>
-            </aside>
-          </div>
-
-          <h3>Photos from trips</h3>
-          <div class="experience-row">
-            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="">
-            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" alt="">
-            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="">
-          </div>
-        </section>
-
-        <!-- HOTELS PANEL -->
-        <section id="hotels" class="panel">
-          <h2>Hotels & Booking</h2>
-          <p>We arrange hotels across Sri Lanka — from beachfront boutique stays to hill-country bungalows. Below are sample recommendations.</p>
-
-          <div class="hotels-grid">
-            <article class="hotel-card">
-              <img src="https://images.unsplash.com/photo-1501117716987-c8e5d0b3b35b" alt="Hotel 1">
-              <h4>Seaside Retreat (Sample)</h4>
-              <p class="muted">4.7 ★ — Mirissa beachfront</p>
-              <a class="btn primary" href="#contact">Contact Us</a>
-            </article>
-
-            <article class="hotel-card">
-              <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1" alt="Hotel 2">
-              <h4>Hilltop Bungalow (Sample)</h4>
-              <p class="muted">4.6 ★ — Near Ella</p>
-              <a class="btn primary" href="#contact">Contact Us</a>
-            </article>
-
-            <article class="hotel-card">
-              <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a" alt="Hotel 3">
-              <h4>City Comfort (Sample)</h4>
-              <p class="muted">4.5 ★ — Colombo</p>
-              <a class="btn primary" href="#contact">Contact Us</a>
-            </article>
-          </div>
-        </section>
-
-      </div> <!-- tab-content -->
-    </div> <!-- service-tabs -->
-  </div> <!-- container -->
-
-  <!-- PERSISTENT CONTACT CTA (right fixed on desktop and bottom for mobile) -->
-  <div class="sticky-contact" id="stickyContact">
-    <a href="#contact" class="contact-cta">Contact Us</a>
-  </div>
-
-  <!-- CONTACT FORM (inside the same page) -->
-  <section id="contact" class="section gray">
-    <div class="container">
-      <h2>Contact & Booking</h2>
-
-      <div class="contact-grid">
-        <div class="contact-details">
-          <p><strong>WhatsApp:</strong> +94XXXXXXXXX</p>
-          <p><strong>Phone:</strong> +94XXXXXXXXX</p>
-          <p><strong>Email:</strong> info@gaktravelling.com</p>
-        </div>
-
-        <form class="contact-form" onsubmit="handleServiceContact(event)">
-          <input type="text" name="name" placeholder="Your name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="text" name="whatsapp" placeholder="WhatsApp number" required>
-          <textarea name="message" rows="5" placeholder="Describe your trip / dates / vehicle choice" required></textarea>
-          <button type="submit" class="btn primary">Send Booking Request</button>
-        </form>
-      </div>
-    </div>
-  </section>
-</main>
+<section id="contact" class="section gray">
+  <h2>Contact Us</h2>
+  <a class="contact-float" href="#contact">Arrange Your Trip</a>
+</section>
 
 <footer class="footer">
-  <div class="container">
-    © GAK Travelling — Proudly showing travellers Sri Lanka
-  </div>
+  © GAK Travelling — Proudly showing travellers Sri Lanka
 </footer>
-
-<script>
-/* Tabs: switch panels and support incoming hash navigation */
-(function(){
-  const tabs = Array.from(document.querySelectorAll('.tab-nav .tab'));
-  const panels = Array.from(document.querySelectorAll('.panel'));
-
-  function selectTab(index){
-    tabs.forEach((t,i)=> t.classList.toggle('active', i===index));
-    panels.forEach((p,i)=> p.classList.toggle('active', i===index));
-    // update URL hash (without scrolling jump)
-    const id = panels[index].id;
-    history.replaceState(null, '', '#'+id);
-  }
-
-  tabs.forEach((t,i)=>{
-    t.addEventListener('click', ()=> selectTab(i));
-  });
-
-  // On load: if there's a hash (#vehicles, #driver, #hotels) -> open matching panel
-  function openByHash(){
-    const hash = window.location.hash.replace('#','');
-    if(!hash) return;
-    const panelIndex = panels.findIndex(p=> p.id===hash);
-    if(panelIndex>=0) { selectTab(panelIndex); setTimeout(()=> document.getElementById(hash).scrollIntoView({behavior:'smooth'}),50); }
-  }
-
-  openByHash();
-
-  // Allow clicking service cards on index to open right tab (they land here with hash)
-  window.addEventListener('hashchange', openByHash);
-
-  // small contact form handler
-  window.handleServiceContact = function(e){
-    e.preventDefault();
-    const f = e.target;
-    const data = {
-      name: f.name.value,
-      email: f.email.value,
-      whatsapp: f.whatsapp.value,
-      message: f.message.value,
-      time: new Date().toISOString()
-    };
-    const queue = JSON.parse(localStorage.getItem('gak_service_messages')||'[]');
-    queue.push(data);
-    localStorage.setItem('gak_service_messages', JSON.stringify(queue));
-    alert('Thanks! Your booking request has been saved locally. We will set up email delivery later.');
-    f.reset();
-  };
-})();
-</script>
 
 </body>
 </html>
