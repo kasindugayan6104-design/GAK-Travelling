@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GAK Travelling | Sri Lanka</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GAK Travelling — Sri Lanka</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <!-- HEADER -->
 <header class="header">
   <div class="header-inner">
     <div class="logo-area">
-      <img src="https://i.ibb.co/4ZDvPSQt/image.png" alt="GAK Travelling">
-      <span>GAK Travelling</span>
+      <a href="index.html"><img src="https://i.ibb.co/4ZDvPSQt/image.png" alt="GAK Travelling"></a>
+      <span class="brand">GAK Travelling</span>
     </div>
 
     <nav class="nav">
@@ -27,109 +26,121 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO (unchanged) -->
 <section class="hero">
-  <h1>Explore Sri Lanka with GAK Travelling</h1>
-  <p>
-    We provide vehicles, hotels and professional drivers to make your Sri Lanka
-    vacation memorable. Welcome to Sri Lanka 🇱🇰
-  </p>
+  <div class="hero-inner">
+    <h1>Explore Sri Lanka with GAK Travelling</h1>
+    <p class="lead">We provide vehicles, hotels and professional drivers to make your Sri Lanka vacation memorable. Welcome to Sri Lanka 🇱🇰</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="ourservice.html#vehicles">View Vehicles</a>
+      <a class="btn" href="#locations">Popular Places</a>
+    </div>
+  </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT (image restored) -->
 <section id="about" class="section">
-  <h2>About Us</h2>
-
-  <div class="about-layout">
-    <div class="about-text">
-      <p>
-        GAK Travelling is a Sri Lanka based travel service. We provide vehicles,
-        hotel and booking arrangements with professional, English-speaking drivers
-        and guides.
-      </p>
-    </div>
-
-    <div class="about-image">
-      <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sri Lanka Travel">
+  <div class="container">
+    <h2>About Us</h2>
+    <div class="about-layout">
+      <div class="about-text">
+        <p>GAK Travelling is a Sri Lanka based travel service. We provide vehicles, hotel and booking arrangements with professional, English-speaking drivers and guides. Contact us to arrange your dream vacation and unforgettable experiences.</p>
+      </div>
+      <div class="about-image">
+        <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya / Sri Lanka travel">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES (CLICKABLE NOW) -->
+<!-- SERVICES (links go to the single ourservice.html page with anchors) -->
 <section id="services" class="section gray">
-  <h2>Our Services</h2>
+  <div class="container">
+    <h2>Our Services</h2>
 
-  <div class="service-grid">
+    <div class="service-grid">
+      <!-- clickable card: opens ourservice page at #vehicles -->
+      <a href="ourservice.html#vehicles" class="card link-card service-link">
+        <h3>Vehicle Service</h3>
+        <p>Comfortable vehicles for families, couples and groups.</p>
+      </a>
 
-    <a href="vehicles.html" class="card link-card">
-      <h3>Vehicle Service</h3>
-      <p>Comfortable vehicles for solo travellers, families and groups.</p>
-    </a>
+      <!-- clickable: opens ourservice page at #driver -->
+      <a href="ourservice.html#driver" class="card link-card service-link">
+        <h3>Driver & Guiding</h3>
+        <p>Friendly, English-speaking local driver & guide.</p>
+      </a>
 
-    <a href="#driver" class="card link-card">
-      <h3>Driver & Guiding</h3>
-      <p>Experienced, English-speaking driver with local knowledge.</p>
-    </a>
-
-    <a href="hotels.html" class="card link-card">
-      <h3>Hotels & Booking</h3>
-      <p>We arrange hotels and bookings anywhere in Sri Lanka.</p>
-    </a>
-
-  </div>
-</section>
-
-<!-- DRIVER SECTION -->
-<section id="driver" class="section">
-  <h2>Our Driver & Guiding Service</h2>
-
-  <div class="driver-layout">
-    <div class="driver-description">
-      <p>
-        Our driver is professional, friendly and highly knowledgeable about Sri Lanka.
-        Fluent in English and experienced in cultural, beach, hill country and wildlife trips.
-      </p>
-
-      <ul>
-        <li>✔ English speaking</li>
-        <li>✔ Professional & experienced</li>
-        <li>✔ Local guiding support</li>
-        <li>✔ Safe and comfortable travel</li>
-      </ul>
-    </div>
-
-    <div class="driver-card">
-      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Driver">
-      <h4>Mr. Sampath</h4>
-      <span>Driver & Guide</span>
+      <!-- clickable: opens ourservice page at #hotels -->
+      <a href="ourservice.html#hotels" class="card link-card service-link">
+        <h3>Hotels & Booking</h3>
+        <p>We arrange hotels, tickets and full itinerary bookings.</p>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- LOCATIONS -->
-<section id="locations" class="section gray">
-  <h2>Popular Locations</h2>
-
-  <div class="location-grid">
-    <div class="card"><img src="https://i.ibb.co/v4pkdd9B/image.png"><p>Sigiriya</p></div>
-    <div class="card"><img src="https://i.ibb.co/FkxQMBWX/image.png"><p>Mirissa</p></div>
-    <div class="card"><img src="https://i.ibb.co/ymRwCpHm/image.png"><p>Ella</p></div>
+<!-- LOCATIONS (unchanged) -->
+<section id="locations" class="section">
+  <div class="container">
+    <h2>Popular Locations</h2>
+    <div class="location-grid">
+      <div class="card"><img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya"><p>Sigiriya</p></div>
+      <div class="card"><img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa"><p>Mirissa</p></div>
+      <div class="card"><img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella"><p>Ella</p></div>
+    </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
+<!-- CONTACT (EXPLICITLY requested: kept on home page) -->
+<section id="contact" class="section gray">
+  <div class="container">
+    <h2>Contact Us</h2>
 
-  <p><strong>WhatsApp:</strong> +94XXXXXXXXX</p>
-  <p><strong>Phone:</strong> +94XXXXXXXXX</p>
-  <p><strong>Email:</strong> info@gaktravelling.com</p>
+    <div class="contact-grid">
+      <div class="contact-details">
+        <p><strong>WhatsApp:</strong> +94XXXXXXXXX</p>
+        <p><strong>Phone:</strong> +94XXXXXXXXX</p>
+        <p><strong>Email:</strong> info@gaktravelling.com</p>
+      </div>
+
+      <form class="contact-form" onsubmit="handleContactHome(event)">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="whatsapp" placeholder="WhatsApp number" required>
+        <textarea name="message" rows="4" placeholder="Tell us about your trip" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </div>
+  </div>
 </section>
 
-<!-- FOOTER -->
+<!-- FOOTER (absolute bottom) -->
 <footer class="footer">
-  © GAK Travelling — Proudly showing travellers Sri Lanka
+  <div class="container">
+    © GAK Travelling — Proudly showing travellers Sri Lanka
+  </div>
 </footer>
+
+<script>
+  // simple local contact "store" to avoid JS errors (you can wire to a backend later)
+  function handleContactHome(e){
+    e.preventDefault();
+    const f = e.target;
+    const data = {
+      name: f.name.value,
+      email: f.email.value,
+      whatsapp: f.whatsapp.value,
+      message: f.message.value,
+      time: new Date().toISOString()
+    };
+    const queue = JSON.parse(localStorage.getItem('gak_messages')||'[]');
+    queue.push(data);
+    localStorage.setItem('gak_messages', JSON.stringify(queue));
+    alert('Thanks! Your message has been saved locally. We will set up email delivery later.');
+    f.reset();
+  }
+</script>
 
 </body>
 </html>
