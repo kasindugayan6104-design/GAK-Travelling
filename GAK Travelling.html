@@ -1,24 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8">
+  <title>GAK Travelling | Sri Lanka Tours</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello, my website is live 🚀</h1>
+<header>
+  <div class="nav">
+    <img src="https://i.ibb.co/4ZDvPSQt/image.png" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="drivers.html">Drivers</a>
+      <a href="hotels.html">Booking</a>
+      <a href="locations.html">Locations</a>
+    </nav>
+  </div>
+</header>
 
-  <p>Upload image to cloud:</p>
+<section class="hero">
+  <div class="hero-text">
+    <h1>Explore Sri Lanka with GAK Travelling</h1>
+    <p>
+      We provide vehicles, hotels and professional drivers to make your
+      Sri Lanka vacation memorable. Welcome to Sri Lanka 🇱🇰
+    </p>
+  </div>
 
-  <form 
-    action="https://api.cloudinary.com/v1_1/YOUR_CLOUD_NAME/image/upload"
-    method="POST"
-    enctype="multipart/form-data">
+  <div class="slider">
+    <img src="https://i.ibb.co/v4pkdd9B/image.png">
+    <img src="https://i.ibb.co/FkxQMBWX/image.png">
+    <img src="https://i.ibb.co/ymRwCpHm/image.png">
+  </div>
+</section>
 
-    <input type="file" name="file" required>
-    <input type="hidden" name="upload_preset" value="YOUR_UPLOAD_PRESET">
+<section class="services">
+  <h2>Our Services</h2>
 
-    <button type="submit">Upload Image</button>
-  </form>
+  <div class="service-grid">
+    <div class="card">
+      <h3>Vehicle Service</h3>
+      <p>Comfortable vehicles for any journey.</p>
+      <a href="vehicles.html" class="btn">View Vehicles</a>
+    </div>
 
+    <div class="card">
+      <h3>Drivers & Guides</h3>
+      <p>Professional, English-speaking drivers.</p>
+      <a href="drivers.html" class="btn">Meet Drivers</a>
+    </div>
+
+    <div class="card">
+      <h3>Hotels & Booking</h3>
+      <p>Hotels and full travel arrangements.</p>
+      <a href="hotels.html" class="btn">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © GAK Travelling – Sri Lanka
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
