@@ -1,11 +1,79 @@
-body { font-family: Arial; margin: 0; background:#f5f5f5; }
-.nav { display:flex; gap:20px; padding:15px; background:#0ea5a4; }
-.nav a { color:white; text-decoration:none; }
-.logo { height:40px; }
-.hero { display:flex; padding:40px; }
-.slider img { width:100%; max-width:400px; }
-.services, .page { padding:40px; }
-.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
-.card { background:white; padding:15px; border-radius:10px; }
-.btn { display:inline-block; padding:10px 15px; background:#0ea5a4; color:white; text-decoration:none; border-radius:8px; }
-footer { text-align:center; padding:20px; }
+.driver-section {
+  padding: 50px;
+  background: #ffffff;
+}
+
+.driver-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.driver-layout {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.driver-info {
+  flex: 1;
+}
+
+.driver-info ul {
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.driver-info li {
+  margin-bottom: 8px;
+}
+
+.driver-card {
+  width: 260px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.driver-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.experience-title {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.experience-slider {
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.experience-track {
+  display: flex;
+  gap: 20px;
+  animation: slide 20s linear infinite;
+}
+
+.experience-track img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .driver-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+}
