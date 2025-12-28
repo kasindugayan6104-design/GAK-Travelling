@@ -76,6 +76,27 @@ body {
   margin-bottom: 30px;
 }
 
+/* ABOUT */
+.about-layout {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
 /* SERVICES */
 .service-grid {
   display: grid;
@@ -96,7 +117,7 @@ body {
   border-radius: 10px;
 }
 
-/* DRIVER SECTION */
+/* DRIVER */
 .driver-layout {
   display: flex;
   gap: 30px;
@@ -190,6 +211,7 @@ body {
 
 /* MOBILE */
 @media (max-width: 768px) {
+  .about-layout,
   .driver-layout {
     flex-direction: column;
   }
