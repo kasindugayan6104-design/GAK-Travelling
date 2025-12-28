@@ -1,43 +1,223 @@
-<section class="driver-section">
-  <h2>Our Driver & Guiding Service</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GAK Travelling — Sri Lanka Tours</title>
 
-  <div class="driver-layout">
-    <!-- LEFT: Details -->
-    <div class="driver-info">
-      <h3>Professional Driver & Local Guide</h3>
-      <p>
-        Our driver is a professional, friendly and knowledgeable guide with
-        strong experience travelling across Sri Lanka. Fluent in English and
-        familiar with cultural sites, wildlife parks, beaches and hill country.
+  <!-- Fonts & icons (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-row">
+      <div class="brand">
+        <a href="index.html" class="brand-link">
+          <img src="https://i.ibb.co/4ZDvPSQt/image.png" alt="GAK Travelling logo" class="logo">
+          <span class="brand-name">GAK Travelling</span>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="vehicles.html">Vehicles</a>
+        <a href="hotels.html">Booking</a>
+        <a href="locations.html">Locations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <h1>Explore Sri Lanka with GAK Travelling</h1>
+        <p class="lead">
+          We arrange vehicles, hotels and expert local drivers & guides — so your holiday becomes a lasting memory.
+          Comfortable cars, knowledgeable English-speaking drivers and curated hotel options across Sri Lanka.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="vehicles.html">View Vehicles</a>
+          <a class="btn" href="locations.html">Popular Places</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-slider" id="heroSlider" aria-hidden="false">
+          <div class="hero-slides" id="heroSlides">
+            <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
+            <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
+            <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
+          </div>
+          <div class="hero-dots" id="heroDots" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about container">
+      <h2>About Us</h2>
+      <p class="small">
+        GAK Travelling — a Sri Lanka based travel service. We provide vehicles, hotel & booking arrangements and experienced
+        English-speaking drivers & local guides. Contact us from the booking pages to arrange your dream vacation.
       </p>
+    </section>
 
-      <ul>
-        <li>✔ English speaking</li>
-        <li>✔ Safe & experienced driver</li>
-        <li>✔ Local guiding support</li>
-        <li>✔ Flexible travel planning</li>
-      </ul>
+    <!-- SERVICES -->
+    <section class="services container">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>Vehicle Service</h3>
+          <p>Comfortable vehicles for families, couples and solo travellers.</p>
+          <div class="card-actions">
+            <a class="btn primary" href="vehicles.html">View Vehicles</a>
+          </div>
+        </article>
 
-      <a href="hotels.html" class="btn">Contact Us</a>
-    </div>
+        <article class="service-card">
+          <h3>Drivers & Guiding</h3>
+          <p>Experienced drivers who also guide you to the best local spots.</p>
+          <div class="card-actions">
+            <a class="btn primary" href="#driver">Learn More</a>
+          </div>
+        </article>
 
-    <!-- RIGHT: Driver Profile -->
-    <div class="driver-card">
-      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Driver">
-      <h4>Mr. Sampath</h4>
-      <p>Driver & Travel Guide</p>
-    </div>
-  </div>
+        <article class="service-card">
+          <h3>Hotels & Bookings</h3>
+          <p>We arrange hotels and bookings across the island — tailored to your budget and taste.</p>
+          <div class="card-actions">
+            <a class="btn primary" href="hotels.html">Booking</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <!-- EXPERIENCE SLIDER -->
-  <h3 class="experience-title">Travel Experiences</h3>
+    <!-- DRIVER & GUIDING SECTION (the section you wanted added) -->
+    <section id="driver" class="driver-guide-section container">
+      <h2 class="driver-title">Our Driver & Guiding Service</h2>
 
-  <div class="experience-slider">
-    <div class="experience-track">
-      <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
-      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d">
-      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1">
-      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c">
-    </div>
-  </div>
-</section>
+      <div class="driver-top">
+        <!-- LEFT: DESCRIPTION -->
+        <div class="driver-description">
+          <p>
+            We provide a professional, friendly and knowledgeable driver who also acts as your local guide.
+            Fluent in English and experienced with Sri Lanka’s cultural sites, beaches, hill country and wildlife destinations.
+            Travel safely, comfortably and with confidence.
+          </p>
+
+          <ul class="driver-features">
+            <li>✔ English speaking</li>
+            <li>✔ Safe & experienced driver</li>
+            <li>✔ Local guiding support</li>
+            <li>✔ Flexible travel planning</li>
+          </ul>
+        </div>
+
+        <!-- RIGHT: DRIVER PHOTO BOX -->
+        <aside class="driver-photo-box" aria-label="Driver profile">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Driver photo">
+          <h4 class="driver-name">Mr. Sampath</h4>
+          <p class="driver-role">Driver & Guide</p>
+          <!-- the Contact button should exist on booking/vehicles pages; this is informational only -->
+        </aside>
+      </div>
+
+      <!-- SLIDING PHOTOS (previous travel experiences) -->
+      <h3 class="experience-title">Travel Photos</h3>
+      <div class="driver-slider">
+        <div class="driver-slider-track" id="experienceTrack">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop" alt="Experience 1">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop" alt="Experience 2">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop" alt="Experience 3">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop" alt="Experience 4">
+
+          <!-- repeat images to allow continuous scroll -->
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop" alt="Experience 1">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop" alt="Experience 2">
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATIONS PREVIEW -->
+    <section class="locations container">
+      <h2>Top Locations</h2>
+      <p class="small">A few of Sri Lanka’s most visited places. Contact us from the booking page to plan your route.</p>
+
+      <div class="places-grid">
+        <article class="place-card">
+          <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
+          <h4>Sigiriya</h4>
+          <p class="small">Ancient rock fortress and UNESCO site.</p>
+        </article>
+
+        <article class="place-card">
+          <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
+          <h4>Mirissa</h4>
+          <p class="small">Beaches and whale watching.</p>
+        </article>
+
+        <article class="place-card">
+          <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
+          <h4>Ella</h4>
+          <p class="small">Tea estates and scenic train journeys.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>© GAK Travelling — Proudly showing travellers Sri Lanka</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Minimal scripts for hero slider -->
+  <script>
+    // HERO SLIDER
+    (function(){
+      const slides = document.getElementById('heroSlides');
+      const dots = document.getElementById('heroDots');
+      const total = slides.children.length;
+      let idx = 0;
+
+      function buildDots(){
+        for(let i=0;i<total;i++){
+          const d = document.createElement('button');
+          d.className = 'hero-dot';
+          d.setAttribute('aria-label','Slide '+(i+1));
+          d.onclick = ()=> goTo(i);
+          dots.appendChild(d);
+        }
+        updateDots();
+      }
+      function updateDots(){
+        Array.from(dots.children).forEach((d,i)=> d.classList.toggle('active', i===idx));
+      }
+      function goTo(i){
+        idx = i;
+        slides.style.transform = `translateX(-${i*100}%)`;
+        updateDots();
+      }
+      function next(){
+        idx = (idx+1) % total;
+        goTo(idx);
+      }
+      buildDots();
+      let auto = setInterval(next,4000);
+      slides.addEventListener('mouseenter', ()=> clearInterval(auto));
+      slides.addEventListener('mouseleave', ()=> auto = setInterval(next,4000));
+    })();
+  </script>
+
+  <!-- No external JS required - the driver photo strip uses CSS animation for continuous scroll -->
+</body>
+</html>
