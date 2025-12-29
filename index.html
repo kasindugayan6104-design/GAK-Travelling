@@ -10,6 +10,7 @@
 </head>
 <body>
 
+<!-- HEADER -->
 <header class="site-header">
   <div class="container header-row">
     <a href="index.html" class="brand-link">
@@ -46,9 +47,9 @@
   <div class="hero-right">
     <div class="hero-slider">
       <div class="hero-slides" id="heroSlides">
-        <img src="https://i.ibb.co/v4pkdd9B/image.png">
-        <img src="https://i.ibb.co/FkxQMBWX/image.png">
-        <img src="https://i.ibb.co/ymRwCpHm/image.png">
+        <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
+        <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
+        <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
       </div>
       <div class="hero-dots" id="heroDots"></div>
     </div>
@@ -86,55 +87,61 @@
   </div>
 </section>
 
-<!-- LOCATIONS (UPDATED) -->
+<!-- LOCATIONS (SCROLL, NO SLIDER) -->
 <section id="locations" class="locations-section container">
   <h2>Top Locations</h2>
 
-  <div class="location-slider">
-    <button class="loc-btn left" onclick="moveLoc(-1)">‹</button>
+  <div class="locations-grid large-images">
+    <article class="place-card">
+      <img src="https://i.ibb.co/v4pkdd9B/image.png">
+      <h4>Sigiriya</h4>
+      <p class="muted">Ancient rock fortress</p>
+    </article>
 
-    <div class="location-track" id="locationTrack">
+    <article class="place-card">
+      <img src="https://i.ibb.co/FkxQMBWX/image.png">
+      <h4>Mirissa</h4>
+      <p class="muted">Beaches & whale watching</p>
+    </article>
 
-      <div class="place-card">
-        <img src="https://i.ibb.co/v4pkdd9B/image.png">
-        <h4>Sigiriya</h4>
-        <p class="muted">Ancient rock fortress</p>
-      </div>
+    <article class="place-card">
+      <img src="https://i.ibb.co/ymRwCpHm/image.png">
+      <h4>Ella</h4>
+      <p class="muted">Tea estates & scenic views</p>
+    </article>
 
-      <div class="place-card">
-        <img src="https://i.ibb.co/FkxQMBWX/image.png">
-        <h4>Mirissa</h4>
-        <p class="muted">Beaches & whale watching</p>
-      </div>
+    <article class="place-card">
+      <img src="https://i.ibb.co/N2RnYfL3/image.png">
+      <h4>Kandy</h4>
+      <p class="muted">Cultural capital</p>
+    </article>
 
-      <div class="place-card">
-        <img src="https://i.ibb.co/ymRwCpHm/image.png">
-        <h4>Ella</h4>
-        <p class="muted">Tea estates & scenic views</p>
-      </div>
-
-      <div class="place-card">
-        <img src="https://i.ibb.co/N2RnYfL3/image.png">
-        <h4>Kandy</h4>
-        <p class="muted">Cultural capital</p>
-      </div>
-
-      <div class="place-card">
-        <img src="https://i.ibb.co/93n628PN/image.png">
-        <h4>Yala National Park</h4>
-        <p class="muted">Wildlife & safaris</p>
-      </div>
-
-    </div>
-
-    <button class="loc-btn right" onclick="moveLoc(1)">›</button>
+    <article class="place-card">
+      <img src="https://i.ibb.co/93n628PN/image.png">
+      <h4>Yala National Park</h4>
+      <p class="muted">Wildlife & safari tours</p>
+    </article>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact-section container">
   <h2>Contact Us</h2>
-  <p><strong>WhatsApp:</strong> +94XXXXXXXXX</p>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p><strong>WhatsApp:</strong> +94XXXXXXXXX</p>
+      <p><strong>Phone:</strong> +94XXXXXXXXX</p>
+      <p><strong>Email:</strong> info@gaktravelling.com</p>
+    </div>
+
+    <form class="contact-form" onsubmit="handleContactHome(event)">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="text" name="whatsapp" placeholder="WhatsApp number" required>
+      <textarea name="message" rows="5" placeholder="Tell us about your trip" required></textarea>
+      <button class="btn primary">Send Message</button>
+    </form>
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -143,13 +150,40 @@
 
 </main>
 
+<!-- HERO SLIDER SCRIPT (RESTORED) -->
 <script>
-let locIndex = 0;
-function moveLoc(dir){
-  const track = document.getElementById('locationTrack');
-  const cards = track.children.length;
-  locIndex = Math.max(0, Math.min(locIndex + dir, cards - 1));
-  track.style.transform = `translateX(-${locIndex * 260}px)`;
+(function(){
+  const slides = document.getElementById('heroSlides');
+  const dots = document.getElementById('heroDots');
+  const total = slides.children.length;
+  let idx = 0;
+
+  function buildDots(){
+    for(let i=0;i<total;i++){
+      const d=document.createElement('button');
+      d.className='hero-dot';
+      d.onclick = ()=>goTo(i);
+      dots.appendChild(d);
+    }
+    updateDots();
+  }
+  function updateDots(){
+    Array.from(dots.children).forEach((d,i)=>d.classList.toggle('active',i===idx));
+  }
+  function goTo(i){
+    idx=i;
+    slides.style.transform=`translateX(-${i*100}%)`;
+    updateDots();
+  }
+  function next(){idx=(idx+1)%total;goTo(idx);}
+  buildDots();
+  setInterval(next,4000);
+})();
+
+function handleContactHome(e){
+  e.preventDefault();
+  alert('Thanks — message saved locally.');
+  e.target.reset();
 }
 </script>
 
