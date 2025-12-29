@@ -1,6 +1,6 @@
 :root{
-  --accent:#0ea5a4;
-  --black:#000000;
+  --accent:#ffce4c;
+  --black:#000;
   --bg:#f4f6f7;
   font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial;
 }
@@ -13,7 +13,7 @@ body{
   color:var(--black);
 }
 
-/* layout */
+/* container */
 .container{
   max-width:1100px;
   margin:0 auto;
@@ -94,26 +94,21 @@ body{
 }
 .btn.primary{
   background:var(--accent);
-  color:#fff;
+  color:#000;
 }
+.btn.primary:hover{background:#f5bd32}
 .btn.outline{
-  border:2px solid #fff;
-  color:#fff;
+  border:2px solid var(--accent);
+  color:var(--accent);
 }
 
 /* about */
-.about-section{
-  padding:50px 0;
-}
+.about-section{padding:50px 0}
 .about-layout{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:30px;
   align-items:center;
-}
-.about-text h2{margin-bottom:12px}
-.about-text ul{
-  padding-left:18px;
 }
 .about-text li{
   margin-bottom:10px;
@@ -156,13 +151,8 @@ body{
 }
 
 /* services */
-.services-section{
-  padding:50px 0;
-}
-.services-hint{
-  font-weight:600;
-  margin-bottom:18px;
-}
+.services-section{padding:50px 0}
+.services-hint{font-weight:600}
 .service-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
@@ -177,9 +167,7 @@ body{
   color:#000;
   transition:.3s;
 }
-.service-card:hover{
-  transform:translateY(-6px);
-}
+.service-card:hover{transform:translateY(-6px)}
 
 /* locations */
 .locations-section{padding:50px 0}
@@ -228,6 +216,29 @@ body{
   text-align:center;
   font-weight:600;
 }
+
+/* floating chat */
+.floating-chat{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  z-index:999;
+}
+.chat-btn{
+  padding:12px 14px;
+  border-radius:50px;
+  color:#fff;
+  font-weight:700;
+  text-decoration:none;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+.chat-btn.whatsapp{background:#25D366}
+.chat-btn.messenger{background:#0084FF}
+.chat-btn:hover{transform:translateY(-2px)}
 
 /* responsive */
 @media(max-width:900px){
