@@ -29,7 +29,7 @@
 
 <main>
 
-<!-- HERO WITH BACKGROUND IMAGE -->
+<!-- HERO -->
 <section class="hero hero-bg">
   <div class="hero-overlay">
     <div class="hero-content container">
@@ -53,7 +53,6 @@
 <section id="about" class="about-section container">
   <div class="about-layout">
 
-    <!-- TEXT -->
     <div class="about-text">
       <h2>About Us</h2>
       <ul>
@@ -65,7 +64,6 @@
       </ul>
     </div>
 
-    <!-- SLIDER -->
     <div class="about-slider">
       <div class="about-slides" id="aboutSlides">
         <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
@@ -107,31 +105,31 @@
 
   <div class="locations-grid">
     <article class="place-card">
-      <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
+      <img src="https://i.ibb.co/v4pkdd9B/image.png">
       <h4>Sigiriya</h4>
       <p>Ancient rock fortress</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
+      <img src="https://i.ibb.co/FkxQMBWX/image.png">
       <h4>Mirissa</h4>
       <p>Beach & whale watching</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
+      <img src="https://i.ibb.co/ymRwCpHm/image.png">
       <h4>Ella</h4>
       <p>Hill country views</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/N2RnYfL3/image.png" alt="Kandy">
+      <img src="https://i.ibb.co/N2RnYfL3/image.png">
       <h4>Kandy</h4>
       <p>Cultural capital</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/93n628PN/image.png" alt="Yala">
+      <img src="https://i.ibb.co/93n628PN/image.png">
       <h4>Yala National Park</h4>
       <p>Wildlife safari</p>
     </article>
@@ -144,16 +142,19 @@
 
   <div class="contact-grid">
     <div class="contact-info">
-      <p><strong>WhatsApp:</strong> +94XXXXXXXXX</p>
-      <p><strong>Phone:</strong> +94XXXXXXXXX</p>
-      <p><strong>Email:</strong> info@gaktravelling.com</p>
+      <p><strong>WhatsApp:</strong> +94714828510</p>
+      <p><strong>Phone:</strong> +94714828510</p>
+      <p><strong>Email:</strong> gaknamal5336@gmail.com</p>
     </div>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="text" placeholder="WhatsApp number" required>
-      <textarea rows="5" placeholder="Tell us about your trip" required></textarea>
+    <!-- FORMSPREE FORM -->
+    <form
+      class="contact-form"
+      action="https://formspree.io/f/mnjqwjjv"
+      method="POST"
+    >
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
       <button type="submit" class="btn primary">Send Message</button>
     </form>
   </div>
@@ -164,6 +165,21 @@
 </footer>
 
 </main>
+
+<!-- FLOATING CHAT BUTTONS -->
+<div class="floating-chat">
+  <a class="chat-btn whatsapp"
+     target="_blank"
+     href="https://wa.me/94714828510?text=Hi,%20I’m%20interested%20in%20your%20travel%20services%20in%20Sri%20Lanka.">
+     WhatsApp
+  </a>
+
+  <a class="chat-btn messenger"
+     target="_blank"
+     href="https://m.me/kasun.namal.967">
+     Messenger
+  </a>
+</div>
 
 <!-- ABOUT SLIDER SCRIPT -->
 <script>
