@@ -153,11 +153,13 @@ body{
 /* services */
 .services-section{padding:50px 0}
 .services-hint{font-weight:600}
+
 .service-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:20px;
 }
+
 .service-card{
   background:#fff;
   padding:20px;
@@ -166,8 +168,30 @@ body{
   text-decoration:none;
   color:#000;
   transition:.3s;
+  border:2px solid transparent;
+  position:relative;
 }
-.service-card:hover{transform:translateY(-6px)}
+
+/* yellow accent without full fill */
+.service-card::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  border-radius:14px;
+  border:2px solid var(--accent);
+  opacity:0;
+  transition:.3s;
+  pointer-events:none;
+}
+
+.service-card:hover::after{
+  opacity:1;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 30px rgba(0,0,0,.15);
+}
 
 /* locations */
 .locations-section{padding:50px 0}
@@ -196,6 +220,14 @@ body{
   display:flex;
   gap:30px;
   flex-wrap:wrap;
+}
+.contact-info a{
+  color:#000;
+  font-weight:600;
+  text-decoration:none;
+}
+.contact-info a:hover{
+  color:var(--accent);
 }
 .contact-form{
   background:#fff;
@@ -235,6 +267,7 @@ body{
   text-decoration:none;
   text-align:center;
   box-shadow:0 8px 20px rgba(0,0,0,.2);
+  transition:.2s;
 }
 .chat-btn.whatsapp{background:#25D366}
 .chat-btn.messenger{background:#0084FF}
