@@ -31,9 +31,12 @@
   </header>
 
   <main>
+    <!-- PAGE TITLE (UPDATED TEXT ONLY) -->
     <section class="services-hero container">
-      <h1>Our Services — Vehicles, Driver & Guiding, Hotels</h1>
-      <p class="lead">Everything you need on a single page. Use tabs or quick links to jump between sections. Contact CTA is always available while you browse.</p>
+      <h1>Travel Made Easy</h1>
+      <p class="lead">
+        From vehicles and drivers to guides and hotels — we handle every detail of your trip.
+      </p>
     </section>
 
     <section class="container service-tabs" id="services">
@@ -92,7 +95,10 @@
 
           <div class="driver-row">
             <div class="driver-text">
-              <p>Our drivers are professional, English-speaking, and experienced guiding travellers to cultural sites, safaris, beaches and scenic train routes.</p>
+              <p>
+                Our drivers are professional, English-speaking, and experienced guiding travellers
+                to cultural sites, safaris, beaches and scenic train routes.
+              </p>
               <ul>
                 <li>✔ English speaking</li>
                 <li>✔ Local knowledge</li>
@@ -119,7 +125,10 @@
 
         <div id="hotels" class="panel">
           <h2>Hotels & Booking</h2>
-          <p>We arrange hotels across Sri Lanka — beachfront, hilltop and city stays. Below are samples.</p>
+          <p>
+            We arrange hotels across Sri Lanka — beachfront, hilltop and city stays.
+            Below are samples.
+          </p>
 
           <div class="hotels-grid">
             <article class="hotel">
@@ -182,43 +191,30 @@
   </main>
 
   <script>
-    // tabs
     (function(){
-      const tabs = document.querySelectorAll('.tab-nav .tab');
-      const panels = document.querySelectorAll('.panel');
       const tabButtons = document.querySelectorAll('.tab-nav .tab');
-      // simpler selection using buttons above (.tab)
-      const buttons = document.querySelectorAll('.tab-nav .tab');
-      const tabBtns = document.querySelectorAll('.tab-nav .tab');
-
-      // for compatibility, use .tab elements (we used buttons above in markup)
-      const tabEls = document.querySelectorAll('.tab-nav .tab');
-
-      // using the tab elements to switch
-      const tabButtonsList = document.querySelectorAll('.tab-nav .tab');
-      const panelsList = document.querySelectorAll('.panel');
+      const panels = document.querySelectorAll('.panel');
 
       function select(i){
-        tabButtonsList.forEach((b, idx)=> b.classList.toggle('active', idx===i));
-        panelsList.forEach((p, idx)=> p.classList.toggle('active', idx===i));
+        tabButtons.forEach((b, idx)=> b.classList.toggle('active', idx===i));
+        panels.forEach((p, idx)=> p.classList.toggle('active', idx===i));
       }
 
-      tabButtonsList.forEach((b, i)=> {
+      tabButtons.forEach((b, i)=> {
         b.addEventListener('click', ()=> select(i));
       });
 
-      // open by hash
       function openHash(){
         const h = location.hash.replace('#','');
         if(!h) return;
-        const panelIndex = Array.from(panelsList).findIndex(p=> p.id===h);
-        if(panelIndex>=0) select(panelIndex);
-        // scroll into view
+        const idx = Array.from(panels).findIndex(p=> p.id===h);
+        if(idx>=0) select(idx);
         setTimeout(()=> {
           const el = document.getElementById(h);
           if(el) el.scrollIntoView({behavior:'smooth'});
         }, 50);
       }
+
       openHash();
       window.addEventListener('hashchange', openHash);
     })();
@@ -226,8 +222,16 @@
     function handleServicesContact(e){
       e.preventDefault();
       const f=e.target;
-      const data={name:f.name.value,email:f.email.value,whatsapp:f.whatsapp.value,message:f.message.value,time:new Date().toISOString()};
-      const q = JSON.parse(localStorage.getItem('gak_service_messages')||'[]'); q.push(data); localStorage.setItem('gak_service_messages',JSON.stringify(q));
+      const data={
+        name:f.name.value,
+        email:f.email.value,
+        whatsapp:f.whatsapp.value,
+        message:f.message.value,
+        time:new Date().toISOString()
+      };
+      const q = JSON.parse(localStorage.getItem('gak_service_messages')||'[]');
+      q.push(data);
+      localStorage.setItem('gak_service_messages',JSON.stringify(q));
       alert('Thanks — booking request saved locally.');
       f.reset();
     }
