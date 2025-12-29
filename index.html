@@ -6,15 +6,15 @@
   <title>GAK Travelling — Sri Lanka Tours</title>
 
   <link rel="stylesheet" href="home.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <!-- HEADER -->
 <header class="site-header">
   <div class="container header-row">
-    <a href="index.html" class="brand-link">
-      <img src="https://i.ibb.co/4ZDvPSQt/image.png" alt="GAK Travelling logo" class="logo">
+    <a href="#" class="brand-link">
+      <img src="https://i.ibb.co/4ZDvPSQt/image.png" class="logo">
       <span class="brand-name">GAK Travelling</span>
     </a>
 
@@ -30,56 +30,38 @@
 <main>
 
 <!-- HERO -->
-<section class="hero hero-bg">
-  <div class="hero-overlay">
-    <div class="hero-content container">
-      <h1>Explore Sri Lanka with GAK Travelling</h1>
-      <p>
-        Travel with ease and confidence as you discover Sri Lanka’s beaches,
-        hills, wildlife, and cultural wonders. We take care of transport,
-        guiding, and accommodation — so you can relax, explore, and create
-        unforgettable memories.
-      </p>
+<section class="hero">
+  <div class="container hero-inner">
+    <h1>Explore Sri Lanka with GAK Travelling</h1>
+    <p class="hero-text">
+      Travel with ease and confidence as you discover Sri Lanka’s beaches, hills,
+      wildlife, and cultural wonders. We take care of transport, guiding, and accommodation —
+      so you can relax, explore, and create unforgettable memories.
+    </p>
 
-      <div class="hero-actions">
-        <a class="btn primary" href="ourservice.html#vehicles">View Vehicles</a>
-        <a class="btn outline" href="#locations">Popular Places</a>
-      </div>
+    <div class="hero-actions">
+      <a href="ourservice.html#vehicles" class="btn primary">View Vehicles</a>
+      <a href="#locations" class="btn outline">Popular Places</a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="about-section container">
-  <div class="about-layout">
-
-    <div class="about-text">
-      <h2>About Us</h2>
-      <ul>
-        <li>Airport pickup and drop-off services</li>
-        <li>Vehicle arrangements based on group size and travel requirements</li>
-        <li>Professional English-speaking drivers and local guides</li>
-        <li>Hotel selection and booking across Sri Lanka</li>
-        <li>Customized travel solutions for leisure and adventure tours</li>
-      </ul>
-    </div>
-
-    <div class="about-slider">
-      <div class="about-slides" id="aboutSlides">
-        <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
-        <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
-        <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
-      </div>
-      <div class="about-dots" id="aboutDots"></div>
-    </div>
-
-  </div>
+  <h2>About Us</h2>
+  <ul class="about-list">
+    <li>Airport pickup and drop-off services</li>
+    <li>Vehicle arrangements based on group size and travel requirements</li>
+    <li>Professional English-speaking drivers and local guides</li>
+    <li>Hotel selection and booking across Sri Lanka</li>
+    <li>Customized travel solutions for leisure and adventure tours</li>
+  </ul>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="services-section container">
   <h2>Our Services</h2>
-  <p class="services-hint">Click a service below to view full details and booking options.</p>
+  <p class="services-note">Click any service to see full details</p>
 
   <div class="service-grid">
     <a href="ourservice.html#vehicles" class="service-card">
@@ -104,35 +86,30 @@
   <h2>Top Locations</h2>
 
   <div class="locations-grid">
-    <article class="place-card">
+    <div class="place-card">
       <img src="https://i.ibb.co/v4pkdd9B/image.png">
       <h4>Sigiriya</h4>
-      <p>Ancient rock fortress</p>
-    </article>
+    </div>
 
-    <article class="place-card">
+    <div class="place-card">
       <img src="https://i.ibb.co/FkxQMBWX/image.png">
       <h4>Mirissa</h4>
-      <p>Beach & whale watching</p>
-    </article>
+    </div>
 
-    <article class="place-card">
+    <div class="place-card">
       <img src="https://i.ibb.co/ymRwCpHm/image.png">
       <h4>Ella</h4>
-      <p>Hill country views</p>
-    </article>
+    </div>
 
-    <article class="place-card">
+    <div class="place-card">
       <img src="https://i.ibb.co/N2RnYfL3/image.png">
       <h4>Kandy</h4>
-      <p>Cultural capital</p>
-    </article>
+    </div>
 
-    <article class="place-card">
+    <div class="place-card">
       <img src="https://i.ibb.co/93n628PN/image.png">
       <h4>Yala National Park</h4>
-      <p>Wildlife safari</p>
-    </article>
+    </div>
   </div>
 </section>
 
@@ -140,24 +117,30 @@
 <section id="contact" class="contact-section container">
   <h2>Contact Us</h2>
 
-  <div class="contact-grid">
-    <div class="contact-info">
-      <p><strong>WhatsApp:</strong> +94714828510</p>
-      <p><strong>Phone:</strong> +94714828510</p>
-      <p><strong>Email:</strong> gaknamal5336@gmail.com</p>
-    </div>
+  <div class="contact-info">
+    <p><strong>WhatsApp:</strong>
+      <a href="https://wa.me/94714828510" target="_blank">+94 714 828 510</a>
+    </p>
 
-    <!-- FORMSPREE FORM -->
-    <form
-      class="contact-form"
-      action="https://formspree.io/f/mnjqwjjv"
-      method="POST"
-    >
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
+    <p><strong>Phone:</strong>
+      <a href="tel:+94714828510">+94 714 828 510</a>
+    </p>
+
+    <p><strong>Email:</strong>
+      <a href="mailto:gaknamal5336@gmail.com">gaknamal5336@gmail.com</a>
+    </p>
   </div>
+
+  <!-- FORMSPREE FORM -->
+  <form
+    action="https://formspree.io/f/mnjqwjjv"
+    method="POST"
+    class="contact-form"
+  >
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
 </section>
 
 <footer class="site-footer">
@@ -166,46 +149,14 @@
 
 </main>
 
-<!-- FLOATING CHAT BUTTONS -->
-<div class="floating-chat">
-  <a class="chat-btn whatsapp"
-     target="_blank"
-     href="https://wa.me/94714828510?text=Hi,%20I’m%20interested%20in%20your%20travel%20services%20in%20Sri%20Lanka.">
-     WhatsApp
-  </a>
+<!-- FLOATING BUTTONS -->
+<div class="floating-buttons">
+  <a href="https://wa.me/94714828510?text=Hi,%20I’m%20interested%20in%20your%20travel%20services%20in%20Sri%20Lanka."
+     target="_blank" class="float-btn whatsapp">WhatsApp</a>
 
-  <a class="chat-btn messenger"
-     target="_blank"
-     href="https://m.me/kasun.namal.967">
-     Messenger
-  </a>
+  <a href="https://m.me/kasun.namal.967"
+     target="_blank" class="float-btn messenger">Messenger</a>
 </div>
-
-<!-- ABOUT SLIDER SCRIPT -->
-<script>
-(function(){
-  const slides = document.getElementById('aboutSlides');
-  const dots = document.getElementById('aboutDots');
-  if(!slides) return;
-
-  const total = slides.children.length;
-  let idx = 0;
-
-  for(let i=0;i<total;i++){
-    const d=document.createElement('button');
-    d.onclick=()=>goTo(i);
-    dots.appendChild(d);
-  }
-
-  function goTo(i){
-    idx=i;
-    slides.style.transform=`translateX(-${i*100}%)`;
-    [...dots.children].forEach((b,j)=>b.classList.toggle('active',j===i));
-  }
-
-  setInterval(()=>goTo((idx+1)%total),4000);
-})();
-</script>
 
 </body>
 </html>
