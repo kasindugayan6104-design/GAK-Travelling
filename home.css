@@ -126,5 +126,33 @@ body{margin:0;background:var(--bg);color:var(--dark);-webkit-font-smoothing:anti
   height:220px;
   object-fit:cover;
 }
+/* services hint text */
+.services-hint{
+  text-align:center;
+  color:var(--muted);
+  margin-bottom:18px;
+  font-size:15px;
+}
+
+/* make service cards feel clickable */
+.service-card{
+  cursor:pointer;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.service-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 36px rgba(2,6,23,0.12);
+}
+
+/* subtle image zoom on hover */
+.service-card img{
+  transition:transform .35s ease;
+}
+
+.service-card:hover img{
+  transform:scale(1.05);
+}
+
 
 
