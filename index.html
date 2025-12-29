@@ -37,8 +37,9 @@
       <div class="hero-left">
         <h1>Explore Sri Lanka with GAK Travelling</h1>
         <p class="lead">
-          We arrange vehicles, hotels and expert local drivers & guides — so your holiday becomes a lasting memory.
-          Comfortable cars, knowledgeable English-speaking drivers and curated hotel options across Sri Lanka.
+          Travel with ease and confidence as you discover Sri Lanka’s beaches, hills,
+          wildlife, and cultural wonders. We take care of transport, guiding, and accommodation —
+          so you can relax, explore, and create unforgettable memories.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="ourservice.html#vehicles">View Vehicles</a>
@@ -47,13 +48,13 @@
       </div>
 
       <div class="hero-right">
-        <div class="hero-slider" id="heroSlider" aria-hidden="false">
+        <div class="hero-slider" id="heroSlider">
           <div class="hero-slides" id="heroSlides">
             <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
             <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
             <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
           </div>
-          <div class="hero-dots" id="heroDots" aria-hidden="true"></div>
+          <div class="hero-dots" id="heroDots"></div>
         </div>
       </div>
     </section>
@@ -63,12 +64,16 @@
       <div class="about-inner">
         <div class="about-text">
           <h2>About Us</h2>
-          <p>
-            GAK Travelling is a Sri Lanka based travel service. We provide vehicles,
-            hotel and booking arrangements with professional, English-speaking drivers & local guides.
-            Contact us to arrange your dream vacation and unforgettable experiences.
-          </p>
+
+          <ul>
+            <li>Airport pickup and drop-off services</li>
+            <li>Vehicle arrangements based on group size and travel requirements</li>
+            <li>Professional English-speaking drivers and local guides</li>
+            <li>Hotel selection and booking across Sri Lanka</li>
+            <li>Customized travel solutions for leisure and adventure tours</li>
+          </ul>
         </div>
+
         <div class="about-image">
           <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
         </div>
@@ -81,7 +86,7 @@
 
       <div class="service-grid">
         <a href="ourservice.html#vehicles" class="service-card">
-          <img src="https://i.ibb.co/N6wdpbGs/image.png" alt="Honda Freed">
+          <img src="https://i.ibb.co/N6wdpbGs/image.png" alt="Vehicle service">
           <div class="service-meta">
             <h3>Vehicle Service</h3>
             <p>Choose from comfortable vehicles for any trip.</p>
@@ -89,7 +94,7 @@
         </a>
 
         <a href="ourservice.html#driver" class="service-card">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Driver">
+          <img src="https://i.ibb.co/b5Kx4zp5/image.png" alt="Driver">
           <div class="service-meta">
             <h3>Driver & Guiding</h3>
             <p>Professional local drivers who also guide you.</p>
@@ -97,7 +102,7 @@
         </a>
 
         <a href="ourservice.html#hotels" class="service-card">
-          <img src="https://images.unsplash.com/photo-1501117716987-c8e5d0b3b35b" alt="Hotel">
+          <img src="https://i.ibb.co/n8jXwHdM/image.png" alt="Hotels">
           <div class="service-meta">
             <h3>Hotels & Booking</h3>
             <p>We arrange hotels and full travel bookings.</p>
@@ -110,13 +115,25 @@
     <section id="locations" class="locations-section container">
       <h2>Top Locations</h2>
       <div class="locations-grid">
-        <article class="place-card"><img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya"><h4>Sigiriya</h4><p class="muted">Ancient rock fortress</p></article>
-        <article class="place-card"><img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa"><h4>Mirissa</h4><p class="muted">Beaches & whale watching</p></article>
-        <article class="place-card"><img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella"><h4>Ella</h4><p class="muted">Tea estates & scenic views</p></article>
+        <article class="place-card">
+          <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
+          <h4>Sigiriya</h4>
+          <p class="muted">Ancient rock fortress</p>
+        </article>
+        <article class="place-card">
+          <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
+          <h4>Mirissa</h4>
+          <p class="muted">Beaches & whale watching</p>
+        </article>
+        <article class="place-card">
+          <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
+          <h4>Ella</h4>
+          <p class="muted">Tea estates & scenic views</p>
+        </article>
       </div>
     </section>
 
-    <!-- CONTACT (home) -->
+    <!-- CONTACT -->
     <section id="contact" class="contact-section container">
       <h2>Contact Us</h2>
 
@@ -163,22 +180,25 @@
         }
         updateDots();
       }
-      function updateDots(){Array.from(dots.children).forEach((d,i)=> d.classList.toggle('active', i===idx));}
-      function goTo(i){idx=i; slides.style.transform = `translateX(-${i*100}%)`; updateDots();}
-      function next(){idx=(idx+1)%total; goTo(idx);}
+      function updateDots(){
+        Array.from(dots.children).forEach((d,i)=>d.classList.toggle('active',i===idx));
+      }
+      function goTo(i){
+        idx=i;
+        slides.style.transform=`translateX(-${i*100}%)`;
+        updateDots();
+      }
+      function next(){idx=(idx+1)%total;goTo(idx);}
       buildDots();
       let auto=setInterval(next,4000);
-      slides.addEventListener('mouseenter', ()=> clearInterval(auto));
-      slides.addEventListener('mouseleave', ()=> auto=setInterval(next,4000));
+      slides.addEventListener('mouseenter',()=>clearInterval(auto));
+      slides.addEventListener('mouseleave',()=>auto=setInterval(next,4000));
     })();
 
     function handleContactHome(e){
       e.preventDefault();
-      const f=e.target;
-      const data={name:f.name.value,email:f.email.value,whatsapp:f.whatsapp.value,message:f.message.value,time:new Date().toISOString()};
-      const q=JSON.parse(localStorage.getItem('gak_messages')||'[]'); q.push(data); localStorage.setItem('gak_messages',JSON.stringify(q));
-      alert('Thanks — message saved locally. We will set up email delivery later.');
-      f.reset();
+      alert('Thanks — message saved locally.');
+      e.target.reset();
     }
   </script>
 </body>
