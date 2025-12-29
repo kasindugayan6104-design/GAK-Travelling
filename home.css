@@ -121,4 +121,10 @@ body{margin:0;background:var(--bg);color:var(--dark);-webkit-font-smoothing:anti
 }
 .loc-btn.left{left:-12px}
 .loc-btn.right{right:-12px}
+/* larger, uniform location images */
+.locations-grid.large-images img{
+  height:220px;
+  object-fit:cover;
+}
+
 
