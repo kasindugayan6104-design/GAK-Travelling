@@ -13,7 +13,7 @@
 <header class="site-header">
   <div class="container header-row">
     <a href="index.html" class="brand-link">
-      <img src="https://i.ibb.co/4ZDvPSQt/image.png" class="logo" alt="GAK Travelling">
+      <img src="https://i.ibb.co/4ZDvPSQt/image.png" class="logo" alt="logo">
       <span class="brand-name">GAK Travelling</span>
     </a>
 
@@ -31,75 +31,160 @@
 
 <section class="services-hero container">
   <h1>Travel Made Easy</h1>
-  <p>
+  <p class="lead">
     From vehicles and drivers to guides and hotels — we handle every detail of your trip.
   </p>
 </section>
 
-<!-- VEHICLES -->
-<section id="vehicles" class="container">
-  <h2>Vehicle Services</h2>
+<section class="container service-tabs">
 
-  <div class="vehicles-list">
-    <div class="vehicle-row">
-      <img src="https://i.ibb.co/N6wdpbGs/image.png">
-      <div>
-        <h3>Honda Freed</h3>
-        <p><strong>Passengers:</strong> 6–7</p>
-        <p>Compact people-mover, ideal for families and small groups.</p>
-      </div>
-    </div>
-
-    <div class="vehicle-row">
-      <img src="https://i.ibb.co/C5Xf3GCB/image.png">
-      <div>
-        <h3>Toyota Axio</h3>
-        <p><strong>Passengers:</strong> 4–5</p>
-        <p>Comfortable sedan, perfect for city and highway travel.</p>
-      </div>
-    </div>
-
-    <div class="vehicle-row">
-      <img src="https://i.ibb.co/zTXm2bLG/image.png">
-      <div>
-        <h3>Toyota Prius</h3>
-        <p><strong>Passengers:</strong> 4–5</p>
-        <p>Hybrid sedan with excellent fuel efficiency for long trips.</p>
-      </div>
-    </div>
+  <div class="tab-nav">
+    <button class="tab active" data-target="vehicles">Vehicles</button>
+    <button class="tab" data-target="driver">Driver & Guiding</button>
+    <button class="tab" data-target="hotels">Hotels</button>
   </div>
-</section>
 
-<!-- DRIVER -->
-<section id="driver" class="container">
-  <h2>Driver & Guiding Service</h2>
+  <div class="tab-panels">
 
-  <div class="driver-box">
-    <img src="https://i.ibb.co/b5Kx4zp5/image.png" alt="Driver">
+    <!-- VEHICLES -->
+    <div id="vehicles" class="panel active">
+      <h2>Available Vehicles</h2>
 
-    <div>
-      <h3>Mr Kasun Namal</h3>
-      <ul>
-        <li>Professional English-speaking driver</li>
-        <li>Experienced local guide</li>
-        <li>Safe and comfortable driving</li>
-        <li>Flexible tour planning</li>
-      </ul>
+      <div class="vehicles-grid">
+
+        <article class="vehicle">
+          <img src="https://i.ibb.co/N6wdpbGs/image.png">
+          <div class="vehicle-meta">
+            <h3>Honda Freed</h3>
+            <p>Passengers: 6–7</p>
+            <p>Compact people-mover, ideal for families and small groups.</p>
+          </div>
+        </article>
+
+        <article class="vehicle">
+          <img src="https://i.ibb.co/C5Xf3GCB/image.png">
+          <div class="vehicle-meta">
+            <h3>Toyota Axio</h3>
+            <p>Passengers: 4–5</p>
+            <p>Comfortable sedan, perfect for city and highway travel.</p>
+          </div>
+        </article>
+
+        <article class="vehicle">
+          <img src="https://i.ibb.co/zTXm2bLG/image.png">
+          <div class="vehicle-meta">
+            <h3>Toyota Prius</h3>
+            <p>Passengers: 4–5</p>
+            <p>Hybrid sedan with excellent fuel efficiency.</p>
+          </div>
+        </article>
+
+        <article class="vehicle">
+          <img src="https://i.ibb.co/pr6cfvg1/image.png">
+          <div class="vehicle-meta">
+            <h3>Honda Vezel</h3>
+            <p>Passengers: 4–5</p>
+            <p>Compact SUV with extra luggage space.</p>
+          </div>
+        </article>
+
+        <article class="vehicle">
+          <img src="https://i.ibb.co/93sZf7zK/image.png">
+          <div class="vehicle-meta">
+            <h3>Honda Mini Vehicle</h3>
+            <p>Passengers: 3–4</p>
+            <p>Small, fuel-efficient car for city rides.</p>
+          </div>
+        </article>
+
+        <article class="vehicle">
+          <img src="https://i.ibb.co/0yvVM793/image.png">
+          <div class="vehicle-meta">
+            <h3>Toyota KDH</h3>
+            <p>Passengers: 10–14</p>
+            <p>Spacious van for groups and airport transfers.</p>
+          </div>
+        </article>
+
+        <article class="vehicle">
+          <img src="https://i.ibb.co/qYBc41N2/image.png">
+          <div class="vehicle-meta">
+            <h3>Off-Road Double Cab</h3>
+            <p>Passengers: 4–5</p>
+            <p>Ideal for safaris and rough terrain.</p>
+          </div>
+        </article>
+
+      </div>
     </div>
-  </div>
-</section>
 
-<!-- HOTELS -->
-<section id="hotels" class="container">
-  <h2>Hotel Selection & Booking</h2>
-  <p>
-    Browse popular hotels across Sri Lanka. From beaches to hill country and cities,
-    we arrange hotel bookings based on your travel requirements.
-  </p>
+    <!-- DRIVER -->
+    <div id="driver" class="panel">
+      <h2>Driver & Guiding</h2>
+
+      <div class="driver-row">
+        <div class="driver-text">
+          <p>
+            Our driver is professional, English-speaking and experienced in guiding
+            travellers across Sri Lanka.
+          </p>
+          <ul>
+            <li>✔ English speaking</li>
+            <li>✔ Local knowledge</li>
+            <li>✔ Safe driving</li>
+            <li>✔ Flexible itineraries</li>
+          </ul>
+        </div>
+
+        <div class="driver-photo">
+          <img src="https://i.ibb.co/b5Kx4zp5/image.png">
+          <h4>Mr. Kasun Namal</h4>
+          <p>Driver & Guide</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HOTELS -->
+    <div id="hotels" class="panel">
+      <h2>Hotel Selection & Booking</h2>
+      <p>
+        Browse popular hotels across Sri Lanka. We arrange bookings based on your
+        travel requirements.
+      </p>
+
+      <div class="hotels-grid">
+        <article class="hotel">
+          <img src="https://i.ibb.co/n8jXwHdM/image.png">
+          <h4>DoubleTree by Hilton – Weerawila</h4>
+        </article>
+
+        <article class="hotel">
+          <img src="https://i.ibb.co/DPGsKbfQ/image.png">
+          <h4>Weligama Bay Marriott Resort</h4>
+        </article>
+
+        <article class="hotel">
+          <img src="https://i.ibb.co/Y7NFjz0d/image.png">
+          <h4>Amaya Lake – Dambulla</h4>
+        </article>
+
+        <article class="hotel">
+          <img src="https://i.ibb.co/7Nv15Nmq/image.png">
+          <h4>Amaya Hills – Kandy</h4>
+        </article>
+
+        <article class="hotel">
+          <img src="https://i.ibb.co/h1ttBHfQ/image.png">
+          <h4>Central Beach Inn – Mirissa</h4>
+        </article>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="container contact-section">
+<section id="contact" class="contact-section container">
   <h2>Contact & Booking</h2>
 
   <div class="contact-grid">
@@ -122,7 +207,7 @@
     >
       <input type="email" name="email" placeholder="Your email" required>
       <textarea name="message" rows="5" placeholder="Describe your trip" required></textarea>
-      <button type="submit">Send Request</button>
+      <button type="submit">Send Booking Request</button>
     </form>
   </div>
 </section>
@@ -131,22 +216,29 @@
   <p>© GAK Travelling — Proudly showing travellers Sri Lanka</p>
 </footer>
 
-</main>
-
 <!-- FLOATING CHAT -->
 <div class="floating-chat">
   <a class="chat-btn whatsapp"
-     target="_blank"
-     href="https://wa.me/94714828510?text=Hi,%20I’m%20interested%20in%20your%20travel%20services%20in%20Sri%20Lanka.">
-     WhatsApp
-  </a>
+     href="https://wa.me/94714828510?text=Hi,%20I’m%20interested%20in%20your%20travel%20services%20in%20Sri%20Lanka."
+     target="_blank">WhatsApp</a>
 
   <a class="chat-btn messenger"
-     target="_blank"
-     href="https://m.me/kasun.namal.967">
-     Messenger
-  </a>
+     href="https://m.me/kasun.namal.967"
+     target="_blank">Messenger</a>
 </div>
+
+<script>
+(function(){
+  const tabs=document.querySelectorAll('.tab');
+  const panels=document.querySelectorAll('.panel');
+  tabs.forEach((t,i)=>t.onclick=()=>{
+    tabs.forEach(b=>b.classList.remove('active'));
+    panels.forEach(p=>p.classList.remove('active'));
+    t.classList.add('active');
+    panels[i].classList.add('active');
+  });
+})();
+</script>
 
 </body>
 </html>
