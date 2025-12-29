@@ -159,7 +159,6 @@ body{
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:20px;
 }
-
 .service-card{
   background:#fff;
   padding:20px;
@@ -168,29 +167,27 @@ body{
   text-decoration:none;
   color:#000;
   transition:.3s;
-  border:2px solid transparent;
   position:relative;
 }
-
-/* yellow accent without full fill */
-.service-card::after{
-  content:'';
-  position:absolute;
-  inset:0;
-  border-radius:14px;
-  border:2px solid var(--accent);
-  opacity:0;
-  transition:.3s;
-  pointer-events:none;
-}
-
-.service-card:hover::after{
-  opacity:1;
-}
-
 .service-card:hover{
   transform:translateY(-6px);
   box-shadow:0 14px 30px rgba(0,0,0,.15);
+}
+
+/* learn more */
+.learn-more{
+  display:inline-block;
+  margin-top:10px;
+  font-weight:700;
+}
+.learn-more::after{
+  content:'';
+  display:block;
+  width:100%;
+  height:3px;
+  background:var(--accent);
+  margin-top:4px;
+  border-radius:2px;
 }
 
 /* locations */
@@ -226,9 +223,7 @@ body{
   font-weight:600;
   text-decoration:none;
 }
-.contact-info a:hover{
-  color:var(--accent);
-}
+.contact-info a:hover{color:var(--accent)}
 .contact-form{
   background:#fff;
   padding:20px;
@@ -267,7 +262,6 @@ body{
   text-decoration:none;
   text-align:center;
   box-shadow:0 8px 20px rgba(0,0,0,.2);
-  transition:.2s;
 }
 .chat-btn.whatsapp{background:#25D366}
 .chat-btn.messenger{background:#0084FF}
