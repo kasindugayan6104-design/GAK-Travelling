@@ -14,7 +14,7 @@
 <header class="site-header">
   <div class="container header-row">
     <a href="index.html" class="brand-link">
-      <img src="https://i.ibb.co/4ZDvPSQt/image.png" class="logo">
+      <img src="https://i.ibb.co/4ZDvPSQt/image.png" alt="GAK Travelling logo" class="logo">
       <span class="brand-name">GAK Travelling</span>
     </a>
 
@@ -35,9 +35,10 @@
     <h1>Explore Sri Lanka with GAK Travelling</h1>
     <p class="lead">
       Travel with ease and confidence as you discover Sri Lanka’s beaches, hills,
-      wildlife, and cultural wonders. We take care of transport, guiding, and accommodation —
-      so you can relax, explore, and create unforgettable memories.
+      wildlife, and cultural wonders. We take care of transport, guiding, and
+      accommodation — so you can relax, explore, and create unforgettable memories.
     </p>
+
     <div class="hero-actions">
       <a class="btn primary" href="ourservice.html#vehicles">View Vehicles</a>
       <a class="btn" href="#locations">Popular Places</a>
@@ -71,58 +72,71 @@
 <!-- SERVICES -->
 <section id="services" class="services-section container">
   <h2>Our Services</h2>
+
   <p class="services-hint">
-  Click any service below to view full details and booking options.
-</p>
+    Click any service below to view full details and booking options.
+  </p>
+
   <div class="service-grid">
     <a href="ourservice.html#vehicles" class="service-card">
-      <img src="https://i.ibb.co/N6wdpbGs/image.png">
-      <div><h3>Vehicle Service</h3><p>Comfortable vehicles for any trip.</p></div>
+      <img src="https://i.ibb.co/N6wdpbGs/image.png" alt="Vehicle service">
+      <div class="service-meta">
+        <h3>Vehicle Service</h3>
+        <p>Comfortable vehicles for any trip.</p>
+      </div>
     </a>
+
     <a href="ourservice.html#driver" class="service-card">
-      <img src="https://i.ibb.co/b5Kx4zp5/image.png">
-      <div><h3>Driver & Guiding</h3><p>Professional local drivers.</p></div>
+      <img src="https://i.ibb.co/b5Kx4zp5/image.png" alt="Driver">
+      <div class="service-meta">
+        <h3>Driver & Guiding</h3>
+        <p>Professional local drivers & guides.</p>
+      </div>
     </a>
+
     <a href="ourservice.html#hotels" class="service-card">
-      <img src="https://i.ibb.co/n8jXwHdM/image.png">
-      <div><h3>Hotels & Booking</h3><p>Hotel & travel arrangements.</p></div>
+      <img src="https://i.ibb.co/n8jXwHdM/image.png" alt="Hotels">
+      <div class="service-meta">
+        <h3>Hotels & Booking</h3>
+        <p>Hotel & travel arrangements.</p>
+      </div>
     </a>
   </div>
 </section>
 
-<!-- LOCATIONS (SCROLL, NO SLIDER) -->
+<!-- LOCATIONS -->
 <section id="locations" class="locations-section container">
   <h2>Top Locations</h2>
 
-  <div class="locations-grid large-images">
+  <div class="locations-grid">
     <article class="place-card">
-      <img src="https://i.ibb.co/v4pkdd9B/image.png">
+      <img src="https://i.ibb.co/v4pkdd9B/image.png" alt="Sigiriya">
       <h4>Sigiriya</h4>
       <p class="muted">Ancient rock fortress</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/FkxQMBWX/image.png">
+      <img src="https://i.ibb.co/FkxQMBWX/image.png" alt="Mirissa">
       <h4>Mirissa</h4>
-      <p class="muted">Beaches & whale watching</p>
+      <p class="muted">Beach & whale watching</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/ymRwCpHm/image.png">
+      <img src="https://i.ibb.co/ymRwCpHm/image.png" alt="Ella">
       <h4>Ella</h4>
-      <p class="muted">Tea estates & scenic views</p>
+      <p class="muted">Hill country views</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/N2RnYfL3/image.png">
+      <img src="https://i.ibb.co/N2RnYfL3/image.png" alt="Kandy">
       <h4>Kandy</h4>
       <p class="muted">Cultural capital</p>
     </article>
 
     <article class="place-card">
-      <img src="https://i.ibb.co/93n628PN/image.png">
+      <img src="https://i.ibb.co/93n628PN/image.png" alt="Yala">
       <h4>Yala National Park</h4>
-      <p class="muted">Wildlife & safari tours</p>
+      <p class="muted">Wildlife safari</p>
     </article>
   </div>
 </section>
@@ -130,6 +144,7 @@
 <!-- CONTACT -->
 <section id="contact" class="contact-section container">
   <h2>Contact Us</h2>
+
   <div class="contact-grid">
     <div class="contact-info">
       <p><strong>WhatsApp:</strong> +94XXXXXXXXX</p>
@@ -142,18 +157,21 @@
       <input type="email" name="email" placeholder="Email" required>
       <input type="text" name="whatsapp" placeholder="WhatsApp number" required>
       <textarea name="message" rows="5" placeholder="Tell us about your trip" required></textarea>
-      <button class="btn primary">Send Message</button>
+      <button type="submit" class="btn primary">Send Message</button>
     </form>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <p>© GAK Travelling — Proudly showing travellers Sri Lanka</p>
+  <div class="container">
+    <p>© GAK Travelling — Proudly showing travellers Sri Lanka</p>
+  </div>
 </footer>
 
 </main>
 
-<!-- HERO SLIDER SCRIPT (RESTORED) -->
+<!-- HERO SLIDER SCRIPT -->
 <script>
 (function(){
   const slides = document.getElementById('heroSlides');
@@ -161,35 +179,27 @@
   const total = slides.children.length;
   let idx = 0;
 
-  function buildDots(){
-    for(let i=0;i<total;i++){
-      const d=document.createElement('button');
-      d.className='hero-dot';
-      d.onclick = ()=>goTo(i);
-      dots.appendChild(d);
-    }
-    updateDots();
+  for(let i=0;i<total;i++){
+    const d=document.createElement('button');
+    d.className='hero-dot';
+    d.onclick=()=>goTo(i);
+    dots.appendChild(d);
   }
+
   function updateDots(){
-    Array.from(dots.children).forEach((d,i)=>d.classList.toggle('active',i===idx));
+    [...dots.children].forEach((d,i)=>d.classList.toggle('active',i===idx));
   }
+
   function goTo(i){
     idx=i;
     slides.style.transform=`translateX(-${i*100}%)`;
     updateDots();
   }
-  function next(){idx=(idx+1)%total;goTo(idx);}
-  buildDots();
-  setInterval(next,4000);
-})();
 
-function handleContactHome(e){
-  e.preventDefault();
-  alert('Thanks — message saved locally.');
-  e.target.reset();
-}
+  setInterval(()=>goTo((idx+1)%total),4000);
+  updateDots();
+})();
 </script>
 
 </body>
 </html>
-
